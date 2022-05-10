@@ -263,26 +263,22 @@ function obtenerAreaRectangulo(alto, ancho) {
   return resultado
 }
 
-function esVocal(letra) {
-  //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
-  //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
-  //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
-  //Escribe tu código aquí
-  var vocales="aeiou"
-  for (let i=0; i<=vocales.length;i++){
-    if (letra===vocales[i]){
-      console.log('Es vocal');
-      break
-    }
-    else if (letra.length!==1){
-      console.log("Dato incorrecto")
-      break
-    }
-    else {
-      console.log("No es vocal")
-      break
-    }
-  } 
+ function esVocal(letra) {
+    //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
+    //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
+    //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
+    //Escribe tu código aquí
+    var vocales="aeiouAEIOU"
+    if (letra.length===1){
+        for (let i=0; i<=vocales.length;i++){
+            if (letra===vocales[i]){
+            console.log('Es vocal');
+            return letra
+          }
+	}
+        console.log('No es vocal');
+    } else {
+        console.log("Dato incorrecto")};
 }
 
 // --------------------------------
