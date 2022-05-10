@@ -249,6 +249,8 @@ function deEuroAdolar(euro) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
+  resultado=(ancho*ancho)/2;
+  return resultado
 }
 
 function retornarPerimetro(lado) {
@@ -256,24 +258,19 @@ function retornarPerimetro(lado) {
   //Escribe tu código aquí
 }
 
-function obtenerAreaRectangulo(alto, ancho) {
-  // Retornar el area de un rectángulo teniendo su altura y ancho
-  // Tu código:
-  resultado=(ancho*ancho)/2;
-  return resultado
-}
 
- function esVocal(letra) {
+
+function esVocal(letra) {
     //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
     //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
     //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
     //Escribe tu código aquí
-    var vocales="aeiouAEIOU"
-    if (letra.length===1){
+   var vocales="aeiouAEIOU";
+   if (letra.length===1){
         for (let i=0; i<=vocales.length;i++){
             if (letra===vocales[i]){
             console.log('Es vocal');
-            return letra
+            return letra;
           }
 	}
         console.log('No es vocal');
